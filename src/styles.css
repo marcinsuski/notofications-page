@@ -1,0 +1,233 @@
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --verylightgrayishblue: hsl(210, 60%, 98%);
+    --lightgrayishblue1: hsl(211, 68%, 94%);
+    --lightgrayishblue2: hsl(205, 33%, 90%);
+    --grayishblue: hsl(219, 14%, 63%);
+    --darkgrayishblue: hsl(219, 12%, 42%);
+    --verydarkblue: hsl(224, 21%, 14%);
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: 0.2px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--verylightgrayishblue);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 5vh;
+    padding: 2rem;
+    padding-top: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notif {
+    width: 100%;
+}
+
+.notif_notif {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+.notif_number {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: absolute;
+    border-radius: 5px;
+    padding: 3px 10px;
+    background-color: var(--blue);
+}
+
+.read {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 0.8rem;
+    padding: 0 0 0 0;
+    font-weight: 600;
+    color: var(--darkgrayishblue);
+    flex: 0 0 105px;
+}
+
+.read:hover {
+    cursor: pointer;
+}
+
+.notif_item {
+    border-radius: 8px;
+    width: 100%;
+    min-height: 20px;
+    padding: 1rem 0;
+    margin: 0.5rem;
+    display: flex;
+    position: relative;
+}
+
+.notif_item.new {
+    background-color: var(--verylightgrayishblue);
+}
+
+.notif_avatar {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    flex: 0 0 auto;
+}
+
+.notif_avatar img {
+    width: 50px;
+    height: 50px;
+}
+
+.notif_content {
+    font-size: 0.9rem;
+}
+
+.person {
+    font-weight: 800;
+}
+
+.text {
+    color: var(--darkgrayishblue);
+    font-weight: 600;
+}
+
+.recent_post {
+    color: var(--darkgrayishblue);
+    font-weight: 800;
+}
+
+.group {
+    color: var(--blue);
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.status {
+    background: none;
+}
+
+.status.new {
+    height: 7px;
+    width: 7px;
+    background-color: red;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.time {
+    color: var(--grayishblue);
+    font-weight: 600;
+}
+
+.message {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 20px 0 0;
+    color: var(--darkgrayishblue);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.commented_image {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    background: url("../src/images/image-chess.webp") no-repeat;
+    background-size: cover;
+    background-position: cover;
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (max-width: 800px) {
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(1, 90%, 64%)
+- Blue: hsl(219, 85%, 26%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish blue 1: hsl(211, 68%, 94%)
+- Light grayish blue 2: hsl(205, 33%, 90%)
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
+- Weights: 500, 800
+*/
