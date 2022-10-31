@@ -40,7 +40,7 @@ main {
     padding: 2rem;
     padding-top: 2rem;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 12px;
     width: 60%;
     height: auto;
     display: flex;
@@ -75,6 +75,10 @@ main {
     background-color: var(--blue);
 }
 
+.notif_number.empty {
+    display: none;
+}
+
 .read {
     outline: none;
     border: none;
@@ -91,6 +95,7 @@ main {
 }
 
 .notif_item {
+    background-color: transparent;
     border-radius: 8px;
     width: 100%;
     min-height: 20px;
@@ -135,9 +140,23 @@ main {
 }
 
 .group {
-    color: var(--blue);
+    color: var(--darkgrayishblue);
     font-size: 0.9rem;
     font-weight: 800;
+}
+
+.commented_image:hover,
+.message:hover {
+    cursor: pointer;
+    background-color: var(--lightgrayishblue1);
+}
+
+.person:hover,
+.recent_post:hover,
+.read:hover,
+.group:hover {
+    cursor: pointer;
+    color: var(--blue);
 }
 
 .status {
@@ -181,9 +200,31 @@ main {
 }
 
 @media (min-width: 1440px) {
-}
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    main {
+        width: 90%;
+        height: 90%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
 
-@media (max-width: 800px) {
+    .container {
+        max-width: 700px;
+        height: 90%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 1rem;
+    }
 }
 
 .attribution {
